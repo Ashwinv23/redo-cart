@@ -47,7 +47,7 @@ svg {
 }
 
 main {
-  height: calc(100vh - 100px);
+  /* height: calc(100vh - 100px); */
   text-align: center;
   padding-top: 3em;
 }
@@ -59,14 +59,21 @@ main {
 
 article {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 2em 0;
 }
 
 img {
-  width: 150px;
+  width: 70px;
+  height: 60px;
 }
 
 .amount-container {
   margin-right: 2em;
+}
+
+.totals {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 12em;
 }
