@@ -3,9 +3,8 @@ import { useSelector } from "react-redux";
 import CartRow from "./CartRow";
 
 const CartContainer = () => {
-  const cartItems = useSelector((store) => store.cart.cartItems);
-  console.log("hi", cartItems);
-  if (cartItems.length === 0) {
+  const { cartItems, total, amount } = useSelector((store) => store.cart);
+  if (cartItems[0].length === 0) {
     return (
       <main>
         <h2>YOUR BAG</h2>
@@ -15,9 +14,9 @@ const CartContainer = () => {
   }
   return (
     <main>
-      {/* {cartItems.map((item) => {
-        return <CartRow />;
-      })} */}
+      {cartItems[0].map((item) => {
+        return <CartRow key={item.id} {...item} />;
+      })}
     </main>
   );
 };
