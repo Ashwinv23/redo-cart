@@ -45,3 +45,15 @@ svg {
   top: -35px;
   left: 20px;
 }
+
+main {
+  height: calc(100vh - 100px);
+  border: 1px solid pink;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.empty {
+  margin-top: 2em;
+  color: red;
+}
