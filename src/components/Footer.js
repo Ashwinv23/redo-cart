@@ -10,6 +10,7 @@ const Footer = () => {
         <h3>Total</h3>
         <h4>${total}</h4>
       </div>
+      <button>clear cart</button>
     </footer>
   );
 };

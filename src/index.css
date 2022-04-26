@@ -77,3 +77,8 @@ img {
   justify-content: space-between;
   margin: 2em 12em;
 }
+
+footer button {
+  margin-left: 50%;
+  margin-bottom: 2em;
+}
