@@ -16,3 +16,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+svg {
+  width: 35px;
+}
+
+.navbar {
+  background-color: blueviolet;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.checkout {
+  padding-top: 1em;
+}
+
+.amount {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  text-align: center;
+  position: relative;
+  top: -35px;
+  left: 20px;
+}
