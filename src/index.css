@@ -48,7 +48,6 @@ svg {
 
 main {
   height: calc(100vh - 100px);
-  border: 1px solid pink;
   text-align: center;
   padding-top: 3em;
 }
@@ -56,4 +55,18 @@ main {
 .empty {
   margin-top: 2em;
   color: red;
+}
+
+article {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2em 0;
+}
+
+img {
+  width: 150px;
+}
+
+.amount-container {
+  margin-right: 2em;
 }
