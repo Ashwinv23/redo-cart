@@ -1,8 +1,11 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { clearCart } from "../features/cart/cartSlice";
 
 const Footer = () => {
+  const dispatch = useDispatch();
   const { total } = useSelector((store) => store.cart);
+  // console.log(total);
   return (
     <footer>
       <hr />
@@ -10,7 +13,7 @@ const Footer = () => {
         <h3>Total</h3>
         <h4>${total}</h4>
       </div>
-      <button>clear cart</button>
+      <button onClick={() => dispatch(clearCart())}>clear cart</button>
     </footer>
   );
 };
