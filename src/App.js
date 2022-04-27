@@ -9,6 +9,7 @@ import Modal from "./components/Modal";
 function App() {
   const dispatch = useDispatch();
   const { cartItems } = useSelector((store) => store.cart);
+  const { isOpen } = useSelector((store) => store.modal);
 
   useEffect(() => {
     dispatch(amtTotals());
@@ -17,8 +18,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      {isOpen && <Modal />}
       <CartContainer />
-      {/* {isOpen && <CartContainer />} */}
       <Footer />
     </div>
   );
