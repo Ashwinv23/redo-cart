@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { amtTotals } from "./features/cart/cartSlice";
-import cartItems from "./cartItems";
+import Modal from "./components/Modal";
 
 function App() {
   const dispatch = useDispatch();
@@ -18,6 +18,7 @@ function App() {
     <div className="App">
       <NavBar />
       <CartContainer />
+      {/* {isOpen && <CartContainer />} */}
       <Footer />
     </div>
   );
